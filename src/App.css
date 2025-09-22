@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure root fills whole screen */
+html, body, #root {
+    height: 100%;
+    width: 100%;
+}
+
+/* Background container */
+.bck {
+    background-image: url('/image.png'); /* ✅ correct for public folder */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex; /* optional if you want centering */
+}
+
+/* Signup container */
+.signup {
+    height: 75%;
+    width: 80%; /* ✅ Take 50% of screen width */
+    margin-top: 100px;
+    margin-right: 15%;
+    margin-left: 200px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    background-color: #5d9bff6e;
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 2px 1px #98cbee, -2px -2px 2px 1px #98cbee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+}
+
+/* Left section */
+.ch1 {
+    border-right: 2px solid white;
+    width: 50%;
+    flex-direction: column;
+}
+
+.cp {
+    margin-left: 3%;
+}
+
+.he {
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+.cir {
+    width: 150px; /* circle size */
+    height: 150px;
+    border-radius: 50%; /* makes it circular */
+    border: 3px solid #ffffff; /* white border */
+    display: flex; /* centers inner content */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* centers in parent */
+}
+
+.st {
+    margin-left: 10%;
+}
+
+.na {
+    margin-left: 15%;
+    background-color: transparent;
+    height: 40px; /* increase this value to make input taller */
+    padding: 8px 10px; /* optional: adds some inner spacing */
+    border-radius: 10px;
+}
+
+.sta {
+    background-color: transparent;
+    height: 40px; 
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.phno {
+    background-color: transparent;
+    height: 40px; 
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.ph {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.age {
+    margin-left: 15%;
+    width: 38%;
+    background-color: transparent;
+    height: 40px; 
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+/* Input placeholders */
+input::placeholder {
+    color: #FFFFFF;
+}
+
+input {
+    outline: none;
+    border: 2px solid white;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: center; /* centers the button horizontally */
+    margin-top: 10%; /* space from inputs */
+}
+
+.signup-btn {
+    background-color: transparent;
+    outline: none;
+    border: 2px solid white;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Right section */
+.ch2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 15px; /* space between buttons */
+}
+
+/* Social buttons */
+.social-btn {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.social-btn.google {
+    background-color: #db4437;
+}
+
+.social-btn.twitter {
+    background-color: #1da1f2;
+}
+
+.social-btn.facebook {
+    background-color: #3b5998;
+}
+
+.social-btn.github {
+    background-color: #333;
+}
+
+.social-btn:hover {
+    opacity: 0.78;
+}
